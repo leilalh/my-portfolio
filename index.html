@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Leila Lahmidi - Portfolio</title>
+    <link rel="stylesheet"    href="./style.css"/>
+    <script src="./script.js"> </script>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav>
+    <div id="home">
+        <div class="profile_name">
+            Leila Lahmidi
+            <div class="contact_info">
+                <img src="Images/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                leila.lahmidi11@gmail.com
+            </div>
+            <div style="clear:both;"></div>
+            <div class="contact_info">
+                <img src="Images/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                +212630085161
+
+            </div>
+        </div>
+        <div class="topdiv">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <a class="topmenu" href="#about-me">Skills</a>
+            <a class="topmenu" href="#about-me">Projects</a>
+            <a class="topmenu" href="#about-me">Recommendations</a>
+            <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+    </div>
+</nav>
+<!-- About Me -->
+<section id="about-me" class="container">
+    <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+    </div>
+
+    <div>
+        <h1>
+            Hi, I'm Leila! <img src="Images/waving-hand.png" width="60px"/>
+        </h1>
+        <p>
+            I'm a software engineering student passionate about web development and backend technologies.
+            I'm currently learning to build full stack applications using Java, Spring Boot, and modern web tools.
+            I love exploring how software can solve real-world problems and I'm constantly working on projects to improve my skills and prepare for a career as a backend developer.
+
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+
+    <div class="all_skills">
+        <div class="skill">
+            <img src="Images/html5.png"/>
+            <h6>HTML</h6>
+            <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="Images/JavaScript-Logo.png"/>
+            <h6>JavaScript</h6>
+            <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="Images/java.png"/>
+            <h6>Java</h6>
+            <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="Images/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>2 years experience</p>
+        </div>
+
+
+        <!-- Add more skills here -->
+
+
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects" id="projects">
+    <h2>
+        Projects
+    </h2>
+    <div style="clear:both;"></div>
+
+    <div id="projects-container" class="projects-container">
+        <div class="project-card">
+            <h3>Documentation Website</h3>
+            <ul>
+                <li>I built a small documentation website using HTML, CSS, JavaScript, and Vue.js to practice my front-end skills and learn how to make interactive pages.</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+            <h3>Travel Agency Website</h3>
+            <ul>
+                <li>Created a travel agency website using WordPress. I worked on the design, added pages and plugins, and made sure it looks good on all devices</li>
+            </ul>
+        </div>
+        <hr>
+       
+
+    </div>
+</section>
+<div style="clear:both;"></div>
+
+
+<!-- Recommendations -->
+<section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Leila is a motivated and dedicated student.
+            She learns fast, adapts to new technologies easily, and always contributes creative ideas during group projects.
+            Her enthusiasm makes teamwork enjoyable and productive.
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Working with Leila was a pleasure.
+            She shows great initiative, asks insightful questions, and takes responsibility for her tasks.
+            Her problem-solving skills and curiosity set her apart from others.
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Leila consistently demonstrates strong technical and interpersonal skills.
+            She is dependable, detail-oriented, and communicates clearly.
+            I am confident she will excel in any software development or backend engineering role she pursues
+            <span>&#8221;</span>
+        </div>
+    </div>
+</section>
+
+<!-- Recommendation Form -->
+<section id="contact">
+    <div class="flex_center">
+        <fieldset>
+            <legend class="introduction">Leave a Recommendation</legend>
+            <input type="text" placeholder="Name (Optional)"> <br/>
+            <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+            <div class="flex_center">
+                <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
+        </fieldset>
+    </div>
+</section>
+
+<div class="iconbutton">
+    <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+    </a>
+</div>
+
+<div class="popup" id="popup" class="flex_center">
+    <img src="Images/icons8-check-32.png"/>
+    <h3>Thanks for leaving a recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+</div>
+</body>
+</html>
+
+
+</body>
+</html>
